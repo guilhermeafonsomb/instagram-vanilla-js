@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="./assets/instagram.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <title>Vanilla Ice Instagram</title>
+  </head>
+  <body>
+    <main class="container-page">
+
+      <section class="post-card">
+        <article class="content-top-card">
+          <div>
+            <img src="assets/profile-image.svg" alt="profile photo" />
+          </div>
+
+          <div class="name-location">
+            <b>Erik Dunlop</b>
+            <small>San Francisco, California</small>
+          </div>
+        </article>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="swiper-images"></div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <article class="container-comments">
+          <article class="container-interaction-buttons">
+            <button id="heart-button">
+              <img
+                class="favorite-icon"
+                id="heart-red"
+                src="assets/heart-red.svg"
+                alt="favorite icon"
+              />
+              <img id="heart-black" src="assets/heart-black.svg" alt="favorite icon" />
+            </button>
+
+            <button>
+              <img src="assets/comment.svg" alt="comment icon" />
+            </button>
+
+            <button>
+              <img src="assets/send.svg" alt="send icon" />
+            </button>
+          </article>
+
+          <div class="comment-description">
+            <p>
+              <b>Lucas Credie</b> dolor sit amet, consectetur adipiscing elit. Mi enim ut eu cras
+              ultrices eget et tristique proin. Mi enim ut eu cras ultrices eget et tristique proin.
+            </p>
+
+            <div class="comments-container" id="comments"></div>
+          </div>
+
+          <article class="container-post-comment">
+            <input id="comment" type="text" />
+            <button id="button">Post</button>
+          </article>
+        </article>
+          <img src="./assets/easter-egg.jpg" id="easter-egg"></img>
+
+      </section>
+    </main>
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
