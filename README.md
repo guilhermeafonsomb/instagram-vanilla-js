@@ -1,4 +1,4 @@
-﻿# project-react-instagram
+﻿# project-vanilla-js-instagram
 
 > This is a simple instagram technical challenge for a company, I liked the project and decided to publish it on my profile.
 
